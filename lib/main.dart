@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       primaryColorDark: Color(0xffb10000),
       visualDensity: VisualDensity.adaptivePlatformDensity,
       textTheme: TextTheme(
-          headline6: TextStyle(fontSize: 32, fontStyle: FontStyle.italic)),
+          headline6: TextStyle(fontSize: 16, fontStyle: FontStyle.normal)),
     );
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'App Scanner Prenda',
       theme: themeData,
       home: MyHomePage(),
     );

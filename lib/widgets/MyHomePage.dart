@@ -1,7 +1,8 @@
-import 'package:app_prenda_scanner/mainScreens/homeScreen.dart';
+import 'package:app_prenda_scanner/mainScreens/ingresoManual/IngresoManual.dart';
 import 'package:app_prenda_scanner/utils/AssetsImages.dart';
 import 'package:app_prenda_scanner/utils/ConstantsApp.dart';
 import 'package:app_prenda_scanner/utils/TextApp.dart';
+import 'package:app_prenda_scanner/widgets/design/DesignWidgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:splashscreen/splashscreen.dart';
@@ -18,11 +19,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: ConstantsApp.TIME_SPLASH_SCREEN,
-      navigateAfterSeconds: HomeScreen(),
+      navigateAfterSeconds: IngresoManual(),
       image: AssetsImages.ImageLogoSplash(),
-      loaderColor: Theme.of(context).primaryColor,
-      loadingText: Text(TextApp.LOADING),
-      backgroundColor: Color(0xffec1c22),
+      loaderColor: Colors.white,
+      loadingText: Text(
+                          TextApp.LOADING, 
+                          style: TextStyle(color: Colors.white)
+                        ),
+      gradientBackground: DesignAssets().linearGradientMain(context),
     );
   }
 }
