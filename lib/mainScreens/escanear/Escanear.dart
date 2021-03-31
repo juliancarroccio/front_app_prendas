@@ -1,38 +1,23 @@
 import 'package:app_prenda_scanner/mainScreens/acercaDe/AcercaDe.dart';
-import 'package:app_prenda_scanner/mainScreens/escanear/Escanear.dart';
 import 'package:app_prenda_scanner/utils/TextApp.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class IngresoManual extends StatefulWidget {
+class Escanear extends StatefulWidget {
   @override
-  _IngresoManualState createState() => _IngresoManualState();
+  _EscanearState createState() => _EscanearState();
 }
 
-class _IngresoManualState extends State<IngresoManual> {
-  int _selectedIndex = 0;
-
-  final List<Widget> _children = [
-    IngresoManual(),
-    Escanear(),
-  ];
-
-  void _selectedOptionInMyBottonNavigation(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
+class _EscanearState extends State<Escanear> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
       appBar: AppBar(
-        title: Text(TextApp.MANUAL_INPUT_TITTLE),
-        centerTitle: true,
-        elevation: 10,
-        leading: Icon(Icons.keyboard),
-      ),
-      body: Text('Pantalla en proceso de Ingreso Manual'),
+          title: Text(TextApp.SCAN_TITTLE),
+          centerTitle: true,
+          elevation: 10,
+          leading: Icon(Icons.qr_code_scanner)),
+      body: Text('Pantalla en proceso escanear'),
       endDrawer: Drawer(
           child: ListView(
         padding: EdgeInsets.zero,
