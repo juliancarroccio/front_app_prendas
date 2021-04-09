@@ -1,5 +1,5 @@
 import 'package:app_prenda_scanner/mainScreens/acercaDe/AcercaDe.dart';
-import 'package:app_prenda_scanner/mainScreens/escanear/Escanear.dart';
+import 'package:app_prenda_scanner/mainScreens/escanear/MostrarResultado.dart';
 import 'package:app_prenda_scanner/utils/TextApp.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

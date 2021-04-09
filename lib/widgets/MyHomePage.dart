@@ -1,4 +1,4 @@
-import 'package:app_prenda_scanner/mainScreens/escanear/Escanear.dart';
+import 'package:app_prenda_scanner/mainScreens/escanear/Scan.dart';
 import 'package:app_prenda_scanner/mainScreens/ingresoManual/IngresoManual.dart';
 import 'package:app_prenda_scanner/utils/AssetsImages.dart';
 import 'package:app_prenda_scanner/utils/ConstantsApp.dart';
@@ -39,7 +39,7 @@ class _MyBottonNavigationBarState extends State<MyBottonNavigationBar> {
 
   final List<Widget> _children = [
     IngresoManual(),
-    Escanear(),
+    Scan(),
   ];
 
   void _selectedOptionInMyBottonNavigation(int index) {
